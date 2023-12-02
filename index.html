@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firefighters Charitable Foundation - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><img src="images/LOGO.png"></a>
+        <nav class="navbar">
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="contact.html">CONTACT</a>
+          <a href="donate.html">DONATE</a>
+        </nav>
+      </header>
+      <br><br>
+    <h1 class = "middle">FIREFIGHTERS CHARITABLE FOUNDATION</h1>
+    <h2 class = "middle">Helping Victims of Fire & Disaster</h2><br>
+    <h4 class = "middle">The Firefighters Charitable Foundation provides funding that:</h4><br>
+    <ul class="intro">
+        <li>Assists fire and disaster victims, and supports Volunteer Fire Departments.</li>
+        <li>Funds fire safety programs, first aid education and helps children in need.</li>
+        <li>Delivers aid directly to victims through FFCF and other charitable organizations.</li>
+    </ul><br><br>
+    <div class="container">
+        <div class="paragraphs">
+            <div class="content">
+                <h2>Why You Should Support FFCF</h2>
+                <h4 class="text"> The destruction a fire or disaster brings to a family's hopes and dreams is devastating. The lucky ones escape a fire uninjured only to find all their possessions have been destroyed. They cannot replace their many years of sacrifice and struggle to regain all that was lost. A little comfort in their time of need is so crucial to their survival.</h4>    
+            </div>
+            <div class="content">
+                <h2> How Your Donation Will Help</h2>
+                <h4 class = "text"> Your financial gift will help us to aid the thousands of victims across the country needing some of life's basic necessities. Our support services are only made possible through the generosity of caring and concerned people like you!</h4>
+            </div>
+        </div>
+    <img class = "pic" src="images/home-firefighters.jpg" alt="Image of Three Firefighters">
+    </div><br><br><br>
+    <div class="center-container">
+        <a href="donate.html"> <button class="donate-button">DONATE</button></a>
+    </div>
+    <div class="donation-box">
+        <h3>Donors of the Week</h3><br>
+            <div class="names" id="nameList">
+            <p></p>
+            </div>
+    </div>
+    <div class="center-container">
+        <a> <button class="donate-button" onclick= "homeDonate()" id = "homeDonate">PLEDGE</button></a>
+    </div><br><br>
+    <footer class="grid-container">
+        <div class="column" id="one">
+            <p>Call us:<br />P. 516-249-0332<br /> F. 516-249-0338</p>
+        </div>
+        <div class="column" id="two">
+            <p>One West St, Farmingdale, NY 11735</p>
+        </div>
+        <div class="column" id="three">
+            <p>© 2021 by Firefighters Charitable Foundation.</p>
+        </div>
+        <div class="column" id="four"> 
+            <a href="https://www.facebook.com/gpffcf/" target="blank">
+                <img class="facebook" src="images/facebook-instagram-twitter-icons-png-12.png">
+            </a>
+            <a href="https://twitter.com/oakbayfire" target="blank">
+                <img class="twitter" src="images/twitter-icons-png-12.png">
+            </a>
+            <a href="https://www.youtube.com/@FirefightersSupportFoundation" target="blank">
+                <img class="youtube" src="images/youtube-icons-png-12.png">
+            </a>
+        </div>
+    </footer>
+    <!--
+    <script>
+        function addDonor(){
+                    var name = document.getElementById('name').value
+                    document.getElementById('nameList').innerHTML = name; }
+    </script>-->
+</body>
+</html>

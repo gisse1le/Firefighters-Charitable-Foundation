@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="contact-styles.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><img src="images/LOGO.png"></a>
+        <nav class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="donate.html">DONATE</a>
+        </nav>
+      </header>
+    </nav>
+    <br><br>
+    <div class="heading">
+    <h1>CONTACT US</h1><br>
+    <p>Firefighters Charitable Foundation</p> <br>
+    <p>Frank R. Tepedino, President <br>One West St.Farmingdale, NY 11735 ffcf@ffcf.org Tel: 516-249-0332 Fax: 516-249-0338</p>
+    <br><br>
+    </div>
+    <div class="body">
+        <div class="container">
+            <div class="title">CONTACT</div>
+            <form action="" id="form">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" name="name" id="name" placeholder="Enter your first and last name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" name="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone</span>
+                        <input type="text" name="phone" id="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Message</span>
+                        <input type="text" name="message" id="message" placeholder="Enter your message" required>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <br><br>
+    <footer class="grid-container">
+        <div class="column" id="one">
+            <p>Call us:<br />P. 516-249-0332<br /> F. 516-249-0338</p>
+        </div>
+        <div class="column" id="two">
+            <p>One West St, Farmingdale, NY 11735</p>
+        </div>
+        <div class="column" id="three">
+            <p>© 2021 by Firefighters Charitable Foundation.</p>
+        </div>
+        <div class="column" id="four"> 
+            <a href="https://www.facebook.com/gpffcf/" target="blank">
+                <img class="facebook" src="images/facebook-instagram-twitter-icons-png-12.png">
+            </a>
+            <a href="https://twitter.com/oakbayfire" target="blank">
+                <img class="twitter" src="images/twitter-icons-png-12.png">
+            </a>
+            <a href="https://www.youtube.com/@FirefightersSupportFoundation" target="blank">
+                <img class="youtube" src="images/youtube-icons-png-12.png">
+            </a>
+        </div>
+    </footer>
+                <script>
+                const form = document.querySelector("#form")
+                const submitButton = document.querySelector("#submit")
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbwwRHFYNk7iC6YsRDUa4ZH7HzpIX_ryx5E2d21Cr0woAEbJpeEfcpzN7EgykqdJpGWrvw/exec'
+            
+                form.addEventListener('submit', e => {
+                 e.preventDefault();
+                 submitButton.disabled = true
+                 submitButton.innerHTML = "Loading"
+             
+                 console.log(form);
+                 fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+                   .then(response => {
+                    submitButton.disabled = false
+                    submitButton.innerHTML = "Submit"
+                    alert('Success!', response)})
+                   .catch(error => alert('Error!', error.message))
+                })
+            </script>
+</body>
+</html>
