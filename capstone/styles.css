@@ -49,68 +49,104 @@
   .navbar a:hover::before {
     width: 100%;
   }
-
-
-h1{
+  .intro{
     text-align: center;
-    font-weight: bold;
-
-}
-
-h2{
-    text-align: center;
-    font-weight: italic;
-}
+  }
 body{
-    font-size: 16.30px;
+    margin:0;
+    min-height: 100%;
+    margin-bottom: 0;
 }
-p{
-    margin-left: 8%;
-    margin-right: 8%;
-}
-.about-box{
-display: grid;
-grid-template-columns: repeat(3, 1fr);}
-.volunteer{
-    border-left: black solid;
-    border-right: black solid;
+.middle{
     text-align: center;
+}
+.text{
+    text-align: left;
+}
+
+.pic{
+    width: 45%;
+    height: 295px;
+    margin-left: 50px;
+    margin-right: 9%;
+    margin-top: 5%
+}
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.content {
+    margin-bottom: 7px;
+    margin-left: 20%;
+}
+.paragraphs {
+    flex: 1; 
+}
+.donate-button {
+    padding: 20px 30px;
+    border: none;
+    border-radius: 7px;
+    background-color: #93032E; 
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+.center-container {
+    text-align: center;
+}
+.donate-button:hover {
+    background: linear-gradient(135deg, #93032E, rgb(241, 158, 158));
+}
+
+.donation-box {
+    width: 270px;
+    height: 230px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin:auto;
+    margin-top: 30px;
+    text-align: center;
+    background-color: #93032E;
+    margin-bottom: 10px;
+    
+}
+.names{
+   background-color: white;
+    width: 200px;
+   height: 170px;
+   overflow: scroll ;
+   text-align: center;
+   margin:auto;
+   border: 2px solid #ccc
 
 }
-.individuals{
-    text-align: center;
+.names::-webkit-scrollbar {
+    width: 12px;
 }
-.institutions{
-    text-align: center;
-}
-.grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+
+.names::-webkit-scrollbar-thumb {
     background-color: black;
+}
+h3{
     color: white;
-    padding: 10px; 
 }
-.column {
-    text-align: center;
-    padding: 10px;
-    box-sizing: border-box; /* Include padding and border in the box model */
-}
+
 .bottom-rectangle {
     background-color: black;
     height: 80px;
     width: 100%; 
 }
-.grid-container {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+
+    .grid-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr); 
         background-color: black;
         color: white;
         padding: 10px; 
     }
-.column {
+    .column {
         text-align: center;
         padding: 10px;
         box-sizing: border-box; /* Include padding and border in the box model */

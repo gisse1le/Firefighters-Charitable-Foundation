@@ -1,7 +1,7 @@
 function addDonor() {
     const form = document.querySelector("#form")
                 const submitButton = document.querySelector("#submit")
-                const scriptURL = 'https://script.google.com/macros/s/AKfycbwwRHFYNk7iC6YsRDUa4ZH7HzpIX_ryx5E2d21Cr0woAEbJpeEfcpzN7EgykqdJpGWrvw/exec'
+                const scriptURL = 'https://script.google.com/macros/s/AKfycby5yeYML8sx6iNIQBZwXW3csm-gyardYdKz01u8s-nklDWpASQNGymsSKibFYmQtE7z/exec'
             
                 form.addEventListener('submit', e => {
                  e.preventDefault();
